@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: indiana
+  datasource:
+    url: jdbc:postgresql://localhost:5432/indiana_database
+    username: admin
+    password: 071999
+  flyway:
+    schemas:
+      - public
+      - indiana_database
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
